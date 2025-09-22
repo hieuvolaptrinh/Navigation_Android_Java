@@ -13,7 +13,7 @@
         android:id="@+id/textView_header"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FF6B35"
+        android:background="#ea00ffff"
         android:gravity="center"
         android:text="Danh sách sản phẩm"
         android:textAlignment="center"
