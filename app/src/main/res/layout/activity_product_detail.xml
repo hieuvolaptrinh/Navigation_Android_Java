@@ -7,31 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".ProductDetail">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="43dp" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="97dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/food" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thit Gà Nước Mắm"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="24dp" />
-
+        android:id="@+id/imageView5"
+        android:layout_width="410dp"
+        android:layout_height="276dp"
+        app:srcCompat="@drawable/food"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
