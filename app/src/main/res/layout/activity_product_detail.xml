@@ -117,7 +117,7 @@
                         android:drawableEnd="@drawable/ic_strikethrough"
                         android:text="150.000đ"
                         android:textColor="@android:color/darker_gray"
-                        android:textDecorationLine="lineThrough"
+
                         android:textSize="16sp" />
 
                 </LinearLayout>

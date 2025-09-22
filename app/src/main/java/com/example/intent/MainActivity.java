@@ -2,7 +2,6 @@ package com.example.intent;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnBuy1;
+    Button btnBuy1, btnBuy2, btnBuy3, btnBuy4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +24,39 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Khởi tạo các nút
         btnBuy1 = findViewById(R.id.btnBuy1);
-        btnBuy1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProductDetail.class);
-                startActivity(intent);
-                
-            }
+        btnBuy2 = findViewById(R.id.btnBuy2);
+        btnBuy3 = findViewById(R.id.btnBuy3);
+        btnBuy4 = findViewById(R.id.btnBuy4);
+
+        // Xử lý click cho tất cả các nút mua
+        setupClickListeners();
+    }
+
+    private void setupClickListeners() {
+        // Gà Nướng Mắm
+        btnBuy1.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProductDetail.class);
+            startActivity(intent);
+        });
+
+        // Cơm Tấm Sườn
+        btnBuy2.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProductDetail.class);
+            startActivity(intent);
+        });
+
+        // Bánh Mì Thịt Nướng
+        btnBuy3.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProductDetail.class);
+            startActivity(intent);
+        });
+
+        // Phở Bò Đặc Biệt
+        btnBuy4.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProductDetail.class);
+            startActivity(intent);
         });
     }
 }
